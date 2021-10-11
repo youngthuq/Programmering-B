@@ -3,12 +3,15 @@ let input = document.querySelector('#input')
 
 
 
-const addCard = name => {
+const addCard = (name, index) => {
     let newCard = document.createElement('div')
     newCard.classList.add('card')
     let newH = document.createElement('h1')
     newH.innerHTML = name
     newCard.append(newH)
+    newCard.style.animation= 'anim';
+    newCard.style.animationDuration= '.3s';
+    newCard.style.animationDelay= index/20 + 's';
     main.append(newCard)
 }
 
