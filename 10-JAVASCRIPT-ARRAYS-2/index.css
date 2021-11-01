@@ -4,6 +4,7 @@
     padding:0;
     box-sizing: border-box;
     font-family:'Roboto';
+    scroll-behavior: smooth;
 }
 
 body{
@@ -75,6 +76,9 @@ header img{
     font-size:1.4rem;
 }
 
+.binge {
+    position:relative;
+}
 .binge h2{
     color:white;
     padding-left:3rem;
@@ -82,18 +86,16 @@ header img{
 }
 
 #bingelist{
-    position:relative;
     display:grid;
     grid-auto-flow: column;
-    overflow-x:scroll;
-    overflow-y:hidden;
+    overflow: hidden;
     margin-top:1rem;
+    transition:.4s ease-in-out;
 }
 
 #arrow{
-    position:sticky;
-    top:0;
-    right:0;
+    position:absolute;
+    top:6.5rem;
+    right:1rem;
     height:3rem;
-    margin-top:4rem;
 }

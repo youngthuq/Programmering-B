@@ -16,3 +16,7 @@ bingelist.map( (movie, index) => {
     document.querySelector('#bingelist').append(newImage)
 })
 
+document.querySelector('#arrow').addEventListener('click', ()=>{
+    document.querySelector('#bingelist').scrollBy(600, 0)
+})
+
